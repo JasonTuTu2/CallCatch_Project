@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "CallCatch",
+    "version": "1.0",
+    "description": "Listens for your name in audio streams and notifies you",
+    "permissions": [
+        "storage",
+        "notifications",
+        "tabCapture",
+        "tabs"
+        
+    ],
+    "host_permissions": [
+        "*://meet.google.com/*",
+        "*://teams.microsoft.com/*",
+        "*://youtube.com/*",
+        "*://zoom.us/*",
+        "*://discord.com/*",
+        "*://web.skype.com/*",
+        "*://instagram.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "web_accessible_resources": [{
+        "resources": ["web/*", "web/sounds/chime.mp3", "web/sounds/bell.mp3", "web/sounds/notification.mp3"
+    
+    
+    ],
+        
+        "matches": ["<all_urls>"]
+    }]
+} 

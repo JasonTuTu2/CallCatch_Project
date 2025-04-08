@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallCatch - Audio Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="audio-control.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-left">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15Z" fill="currentColor"/>
+                        <path d="M12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C16.42 20 20 16.42 20 12C20 7.58 16.42 4 12 4ZM12 18C8.69 18 6 15.31 6 12C6 8.69 8.69 6 12 6C15.31 6 18 8.69 18 12C18 15.31 15.31 18 12 18Z" fill="currentColor"/>
+                    </svg>
+                    CallCatch
+                </div>
+            </div>
+            <div class="main-nav">
+                <a href="index.html">Dashboard</a>
+                <a href="audio-control.html" class="active">Audio Control</a>
+            </div>
+            <div class="nav-right">
+                <a href="https://chrome.google.com/webstore" target="_blank" class="btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4L3 8V16L12 20L21 16V8L12 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Download Extension
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Activated</h1>
+        
+        <div class="audio-controls">
+            <div class="site-card">
+                <div class="site-header">
+                    <div class="site-info">
+                        <img src="icons/google-meet.svg" alt="Google Meet" class="site-icon">
+                        <span class="site-name">Google Meet</span>
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="volume-control">
+                    <svg class="volume-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 10V14C3 14.55 3.45 15 4 15H7L10.29 18.29C10.92 18.92 12 18.47 12 17.58V6.41C12 5.52 10.92 5.07 10.29 5.7L7 9H4C3.45 9 3 9.45 3 10Z" fill="currentColor"/>
+                    </svg>
+                    <input type="range" class="volume-slider" min="0" max="100" value="52">
+                    <span class="volume-value">52%</span>
+                </div>
+                <div class="name-detection">
+                    <svg class="headphone-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3C7.03 3 3 7.03 3 12V19C3 20.1 3.9 21 5 21H8V12H4V12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12V12H16V21H19C20.1 21 21 20.1 21 19V12C21 7.03 16.97 3 12 3Z" fill="currentColor"/>
+                    </svg>
+                    <span>Name detection</span>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="site-card">
+                <div class="site-header">
+                    <div class="site-info">
+                        <img src="icons/youtube.svg" alt="YouTube" class="site-icon">
+                        <span class="site-name">YouTube</span>
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="volume-control">
+                    <svg class="volume-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 10V14C3 14.55 3.45 15 4 15H7L10.29 18.29C10.92 18.92 12 18.47 12 17.58V6.41C12 5.52 10.92 5.07 10.29 5.7L7 9H4C3.45 9 3 9.45 3 10Z" fill="currentColor"/>
+                    </svg>
+                    <input type="range" class="volume-slider" min="0" max="100" value="80">
+                    <span class="volume-value">80%</span>
+                </div>
+            </div>
+
+            <div class="site-card">
+                <div class="site-header">
+                    <div class="site-info">
+                        <img src="icons/zoom.svg" alt="Zoom" class="site-icon">
+                        <span class="site-name">Zoom</span>
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="volume-control">
+                    <svg class="volume-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 10V14C3 14.55 3.45 15 4 15H7L10.29 18.29C10.92 18.92 12 18.47 12 17.58V6.41C12 5.52 10.92 5.07 10.29 5.7L7 9H4C3.45 9 3 9.45 3 10Z" fill="currentColor"/>
+                    </svg>
+                    <input type="range" class="volume-slider" min="0" max="100" value="65">
+                    <span class="volume-value">65%</span>
+                </div>
+                <div class="name-detection">
+                    <svg class="headphone-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3C7.03 3 3 7.03 3 12V19C3 20.1 3.9 21 5 21H8V12H4V12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12V12H16V21H19C20.1 21 21 20.1 21 19V12C21 7.03 16.97 3 12 3Z" fill="currentColor"/>
+                    </svg>
+                    <span>Name detection</span>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="site-card">
+                <div class="site-header">
+                    <div class="site-info">
+                        <img src="icons/teams.svg" alt="Microsoft Teams" class="site-icon">
+                        <span class="site-name">Microsoft Teams</span>
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="volume-control">
+                    <svg class="volume-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 10V14C3 14.55 3.45 15 4 15H7L10.29 18.29C10.92 18.92 12 18.47 12 17.58V6.41C12 5.52 10.92 5.07 10.29 5.7L7 9H4C3.45 9 3 9.45 3 10Z" fill="currentColor"/>
+                    </svg>
+                    <input type="range" class="volume-slider" min="0" max="100" value="70">
+                    <span class="volume-value">70%</span>
+                </div>
+                <div class="name-detection">
+                    <svg class="headphone-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3C7.03 3 3 7.03 3 12V19C3 20.1 3.9 21 5 21H8V12H4V12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12V12H16V21H19C20.1 21 21 20.1 21 19V12C21 7.03 16.97 3 12 3Z" fill="currentColor"/>
+                    </svg>
+                    <span>Name detection</span>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="site-card">
+                <div class="site-header">
+                    <div class="site-info">
+                        <img src="icons/instagram.svg" alt="Instagram" class="site-icon">
+                        <span class="site-name">Instagram</span>
+                        <span class="status-badge active">Active</span>
+                    </div>
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="audio-control.js"></script>
+</body>
+</html> 

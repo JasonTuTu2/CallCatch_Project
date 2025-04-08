@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallCatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-header">
+        <h1>CallCatch</h1>
+        <div class="header-right">
+            <button id="openWebInterface" class="btn-secondary">Open Web Interface</button>
+            <span id="status-indicator" class="status-indicator">Not listening</span>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="name-input" placeholder="Enter your name">
+        <button class="btn-primary">Save</button>
+    </div>
+
+    <div class="alert-options">
+        <label class="checkbox-container">
+            <input type="checkbox" id="notificationToggle" checked>
+            Show notifications
+        </label>
+        <label class="checkbox-container">
+            <input type="checkbox" id="soundToggle" checked>
+            Play sound
+        </label>
+        <div class="volume-control">
+            <label class="volume-label">Application Volume on Name Trigger</label>
+            <input type="range" id="alertVolume" class="volume-slider" min="0" max="100" value="70">
+        </div>
+        <select id="soundSelect" class="sound-select">
+            <option value="sounds/chime.mp3">Chime</option>
+            <option value="sounds/bell.mp3">Bell</option>
+            <option value="sounds/notification.mp3">Notification</option>
+        </select>
+    </div>
+
+    <button id="toggleListening" class="btn-primary">Start Listening</button>
+
+    <div class="status-info">
+        Current tab: <span id="currentTab">No supported site active</span>
+    </div>
+
+    <div id="nameAlert" style="display: none">
+        <strong>NAME CALLED!</strong>
+    </div>
+
+    <div id="captionContainer" class="caption-container">
+        <div id="captionText" class="caption-text"></div>
+        <div id="transcriptHistory" class="transcript-history"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html> 
